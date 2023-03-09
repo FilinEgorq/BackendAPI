@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Egor\\source\\repos\\BackendAPI\\Domain\\Domain.csproj": {}
+    "C:\\Users\\filin\\Desktop\\егор\\ДЗ\\3 курс\\Учебная практика\\BackendAPI\\BackendAPI\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Egor\\source\\repos\\BackendAPI\\Domain\\Domain.csproj": {
+    "C:\\Users\\filin\\Desktop\\егор\\ДЗ\\3 курс\\Учебная практика\\BackendAPI\\BackendAPI\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Egor\\source\\repos\\BackendAPI\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\filin\\Desktop\\егор\\ДЗ\\3 курс\\Учебная практика\\BackendAPI\\BackendAPI\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Egor\\source\\repos\\BackendAPI\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Egor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Egor\\Source\\Repos\\BackendAPI\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\filin\\Desktop\\егор\\ДЗ\\3 курс\\Учебная практика\\BackendAPI\\BackendAPI\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\filin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\filin\\Desktop\\егор\\ДЗ\\3 курс\\Учебная практика\\BackendAPI\\BackendAPI\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Egor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\filin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -49,8 +49,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -59,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
