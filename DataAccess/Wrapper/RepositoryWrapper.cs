@@ -18,6 +18,8 @@ namespace DataAccess.Wrapper
                 {
                     _user = new UserRepository(_repoContext);
                 }
+
+                return _user;
             }
         }
 
