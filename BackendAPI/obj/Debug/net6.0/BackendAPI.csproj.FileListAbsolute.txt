@@ -126,3 +126,5 @@ C:\Users\filin\Desktop\егор\ДЗ\3 курс\Учебная практика\
 C:\Users\filin\Desktop\егор\ДЗ\3 курс\Учебная практика\BackendAPI\BackendAPI\BackendAPI\obj\Debug\net6.0\BackendAPI.csproj.CopyComplete
 C:\Users\filin\Desktop\егор\ДЗ\3 курс\Учебная практика\BackendAPI\BackendAPI\BackendAPI\obj\Debug\net6.0\BackendAPI.genruntimeconfig.cache
 C:\Users\filin\Desktop\егор\ДЗ\3 курс\Учебная практика\BackendAPI\BackendAPI\BackendAPI\obj\Debug\net6.0\ref\BackendAPI.dll
+C:\Users\filin\Desktop\егор\ДЗ\3 курс\Учебная практика\BackendAPI\BackendAPI\BackendAPI\bin\Debug\net6.0\Domain.dll
+C:\Users\filin\Desktop\егор\ДЗ\3 курс\Учебная практика\BackendAPI\BackendAPI\BackendAPI\bin\Debug\net6.0\Domain.pdb

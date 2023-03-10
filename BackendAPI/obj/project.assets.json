@@ -710,7 +710,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "DataAccess": "1.0.0"
+          "Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.14",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.14"
         },
         "compile": {
           "bin/placeholder/BusinessLogic.dll": {}
@@ -723,6 +725,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.14"
         },
         "compile": {
@@ -730,6 +733,16 @@
         },
         "runtime": {
           "bin/placeholder/DataAccess.dll": {}
+        }
+      },
+      "Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.dll": {}
         }
       }
     }
@@ -2087,11 +2100,17 @@
       "type": "project",
       "path": "../DataAccess/DataAccess.csproj",
       "msbuildProject": "../DataAccess/DataAccess.csproj"
+    },
+    "Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "BusinessLogic >= 1.0.0",
+      "DataAccess >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.14",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.14",
       "Swashbuckle.AspNetCore >= 6.2.3"
@@ -2131,6 +2150,9 @@
           "projectReferences": {
             "C:\\Users\\filin\\Desktop\\егор\\ДЗ\\3 курс\\Учебная практика\\BackendAPI\\BackendAPI\\BusinessLogic\\BusinessLogic.csproj": {
               "projectPath": "C:\\Users\\filin\\Desktop\\егор\\ДЗ\\3 курс\\Учебная практика\\BackendAPI\\BackendAPI\\BusinessLogic\\BusinessLogic.csproj"
+            },
+            "C:\\Users\\filin\\Desktop\\егор\\ДЗ\\3 курс\\Учебная практика\\BackendAPI\\BackendAPI\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\filin\\Desktop\\егор\\ДЗ\\3 курс\\Учебная практика\\BackendAPI\\BackendAPI\\DataAccess\\DataAccess.csproj"
             }
           }
         }

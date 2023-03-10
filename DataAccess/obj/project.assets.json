@@ -634,6 +634,16 @@
             "rid": "win"
           }
         }
+      },
+      "Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.dll": {}
+        }
       }
     }
   },
@@ -1855,10 +1865,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.14",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.14",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.14"
@@ -1895,7 +1911,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\filin\\Desktop\\егор\\ДЗ\\3 курс\\Учебная практика\\BackendAPI\\BackendAPI\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\filin\\Desktop\\егор\\ДЗ\\3 курс\\Учебная практика\\BackendAPI\\BackendAPI\\Domain\\Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

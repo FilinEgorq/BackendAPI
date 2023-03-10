@@ -26,3 +26,6 @@ C:\Users\filin\Desktop\егор\ДЗ\3 курс\Учебная практика\
 C:\Users\filin\Desktop\егор\ДЗ\3 курс\Учебная практика\BackendAPI\BackendAPI\DataAccess\bin\Debug\net6.0\DataAccess.pdb
 C:\Users\filin\Desktop\егор\ДЗ\3 курс\Учебная практика\BackendAPI\BackendAPI\DataAccess\obj\Debug\net6.0\DataAccess.genruntimeconfig.cache
 C:\Users\filin\Desktop\егор\ДЗ\3 курс\Учебная практика\BackendAPI\BackendAPI\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
+C:\Users\filin\Desktop\егор\ДЗ\3 курс\Учебная практика\BackendAPI\BackendAPI\DataAccess\bin\Debug\net6.0\Domain.dll
+C:\Users\filin\Desktop\егор\ДЗ\3 курс\Учебная практика\BackendAPI\BackendAPI\DataAccess\bin\Debug\net6.0\Domain.pdb
+C:\Users\filin\Desktop\егор\ДЗ\3 курс\Учебная практика\BackendAPI\BackendAPI\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CopyComplete

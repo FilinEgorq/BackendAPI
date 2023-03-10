@@ -1,7 +1,7 @@
-using DataAccess.Models;
+using DataAccess.Context;
 using Microsoft.EntityFrameworkCore;
 using DataAccess.Wrapper;
-using BusinessLogic.Interfaces;
+using Domain.Interfaces;
 using BusinessLogic.Services;
 
 var builder = WebApplication.CreateBuilder(args);

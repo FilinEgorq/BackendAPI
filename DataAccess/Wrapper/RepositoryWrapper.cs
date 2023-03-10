@@ -1,5 +1,5 @@
-﻿using DataAccess.Models;
-using DataAccess.Interfaces;
+﻿using DataAccess.Context;
+using Domain.Interfaces;
 using DataAccess.Repositories;
 
 namespace DataAccess.Wrapper

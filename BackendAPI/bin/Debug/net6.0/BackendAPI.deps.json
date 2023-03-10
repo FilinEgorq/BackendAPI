@@ -9,6 +9,7 @@
       "BackendAPI/1.0.0": {
         "dependencies": {
           "BusinessLogic": "1.0.0",
+          "DataAccess": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.14",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.14",
           "Swashbuckle.AspNetCore": "6.2.3"
@@ -489,7 +490,9 @@
       },
       "BusinessLogic/1.0.0": {
         "dependencies": {
-          "DataAccess": "1.0.0"
+          "Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.14",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.14"
         },
         "runtime": {
           "BusinessLogic.dll": {}
@@ -497,10 +500,16 @@
       },
       "DataAccess/1.0.0": {
         "dependencies": {
+          "Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.14"
         },
         "runtime": {
           "DataAccess.dll": {}
+        }
+      },
+      "Domain/1.0.0": {
+        "runtime": {
+          "Domain.dll": {}
         }
       }
     }
@@ -860,6 +869,11 @@
       "sha512": ""
     },
     "DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

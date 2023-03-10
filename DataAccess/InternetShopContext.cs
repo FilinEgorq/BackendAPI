@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
+﻿using Microsoft.EntityFrameworkCore;
+using Domain.Models;
 
-namespace DataAccess.Models
+namespace DataAccess.Context
 {
     public partial class InternetShopContext : DbContext
     {

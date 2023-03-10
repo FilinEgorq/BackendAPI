@@ -1,6 +1,4 @@
-﻿using DataAccess.Interfaces;
-
-namespace DataAccess.Wrapper
+﻿namespace Domain.Interfaces
 {
     public interface IRepositoryWrapper
     {
