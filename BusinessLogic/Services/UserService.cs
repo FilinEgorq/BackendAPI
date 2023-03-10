@@ -21,13 +21,13 @@ namespace BusinessLogic.Services
         public async Task Create(User model)
         {
             await _repositoryWrapper.User.Create(model);
-            _repositoryWrapper.Save();
+            await _repositoryWrapper.Save();
         }
 
         public async Task Update(User model)
         {
             await _repositoryWrapper.User.Update(model);
-            _repositoryWrapper.Save();
+            await _repositoryWrapper.Save();
         }
 
         public async Task Delete(int id)
@@ -35,7 +35,7 @@ namespace BusinessLogic.Services
             var user = await _repositoryWrapper.User.FindByCondition(x => x.Id == id);
 
             await _repositoryWrapper.User.Delete(user.First());
-            _repositoryWrapper.Save();
+            await _repositoryWrapper.Save();
         }
     }
 }
