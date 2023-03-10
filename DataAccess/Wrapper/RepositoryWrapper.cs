@@ -25,6 +25,6 @@ namespace DataAccess.Wrapper
 
         public RepositoryWrapper(InternetShopContext repositoryContext) => _repoContext = repositoryContext;    
 
-        public void Save() => _repoContext.SaveChanges();
+        public async Task Save() => await _repoContext.SaveChangesAsync();
     }
 }
