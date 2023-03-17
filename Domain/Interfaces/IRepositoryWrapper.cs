@@ -12,7 +12,7 @@
 
         IGoodRepository Good { get; }
 
-        IGoodCharachteristicsRepository GoodCharachteristics { get; }
+        IGoodCharachteristicRepository GoodCharachteristic { get; }
 
         IOrderRepository Order { get; }
 

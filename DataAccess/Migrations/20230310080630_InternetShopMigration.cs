@@ -163,14 +163,14 @@ namespace DataAccess.Migrations
                 columns: table => new
                 {
                     GoodId = table.Column<int>(type: "int", nullable: false),
-                    FilterName = table.Column<int>(type: "int", nullable: false),
+                    FilterId = table.Column<int>(type: "int", nullable: false),
                     Value = table.Column<object>(type: "sql_variant", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.ForeignKey(
                         name: "FK__GoodChara__Filte__3F466844",
-                        column: x => x.FilterName,
+                        column: x => x.FilterId,
                         principalTable: "Filters",
                         principalColumn: "Id");
                     table.ForeignKey(
@@ -201,9 +201,9 @@ namespace DataAccess.Migrations
                 column: "CategoryId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_GoodCharachteristics_FilterName",
+                name: "IX_GoodCharachteristics_FilterId",
                 table: "GoodCharachteristics",
-                column: "FilterName");
+                column: "FilterId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_GoodCharachteristics_GoodId",

@@ -13,6 +13,12 @@ builder.Services.AddDbContext<InternetShopContext>(options =>
 
 builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<ICartService, CartService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IFilterService, FilterService>();
+builder.Services.AddScoped<IGoodCharachteristicService, GoodCharachteristicService>();
+builder.Services.AddScoped<IGoodService, GoodService>();
+builder.Services.AddScoped<IOrderService, OrderService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

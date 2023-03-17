@@ -111,9 +111,9 @@ namespace DataAccess.Context
 
                 entity.Property(e => e.Value).HasColumnType("sql_variant");
 
-                entity.HasOne(d => d.FilterNameNavigation)
+                entity.HasOne(d => d.FilterIdNavigation)
                     .WithMany()
-                    .HasForeignKey(d => d.FilterName)
+                    .HasForeignKey(d => d.FilterId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK__GoodChara__Filte__3F466844");
 

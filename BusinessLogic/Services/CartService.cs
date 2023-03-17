@@ -3,7 +3,7 @@ using Domain.Models;
 
 namespace BusinessLogic.Services
 {
-    public class CartService
+    public class CartService : ICartService
     {
         private IRepositoryWrapper _repositoryWrapper;
 

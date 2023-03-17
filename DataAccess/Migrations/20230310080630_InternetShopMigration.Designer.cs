@@ -142,7 +142,7 @@ namespace DataAccess.Migrations
 
             modelBuilder.Entity("Domain.Models.GoodCharachteristic", b =>
                 {
-                    b.Property<int>("FilterName")
+                    b.Property<int>("FilterId")
                         .HasColumnType("int");
 
                     b.Property<int>("GoodId")
@@ -151,7 +151,7 @@ namespace DataAccess.Migrations
                     b.Property<object>("Value")
                         .HasColumnType("sql_variant");
 
-                    b.HasIndex("FilterName");
+                    b.HasIndex("FilterId");
 
                     b.HasIndex("GoodId");
 
@@ -321,9 +321,9 @@ namespace DataAccess.Migrations
 
             modelBuilder.Entity("Domain.Models.GoodCharachteristic", b =>
                 {
-                    b.HasOne("Domain.Models.Filter", "FilterNameNavigation")
+                    b.HasOne("Domain.Models.Filter", "FilterIdNavigation")
                         .WithMany()
-                        .HasForeignKey("FilterName")
+                        .HasForeignKey("FilterId")
                         .IsRequired()
                         .HasConstraintName("FK__GoodChara__Filte__3F466844");
 
@@ -333,7 +333,7 @@ namespace DataAccess.Migrations
                         .IsRequired()
                         .HasConstraintName("FK__GoodChara__GoodI__3E52440B");
 
-                    b.Navigation("FilterNameNavigation");
+                    b.Navigation("FilterIdNavigation");
 
                     b.Navigation("Good");
                 });
