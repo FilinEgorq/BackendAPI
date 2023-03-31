@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Domain.Interfaces;
 using Domain.Models;
+using BackendAPI.Contracts.User;
+using Mapster;
 
 namespace BackendAPI.Controllers
 {
@@ -19,7 +21,14 @@ namespace BackendAPI.Controllers
         public async Task<IActionResult> GetAll() => Ok(await _userService.GetAll());
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(int id) => Ok(await _userService.GetById(id));
+        public async Task<IActionResult> GetById(int id)
+        {
+            var result = await _userService.GetById(id);
+
+            var response = result.Adapt<GetUserResponse>();
+
+            return Ok(response);
+        }
 
         /// <summary>
         /// Добавляет нового пользователя
@@ -41,12 +50,13 @@ namespace BackendAPI.Controllers
         ///     }
         /// 
         /// </remarks>
-        /// <param name="user">Пользователь</param>
+        /// <param name="request">Пользователь</param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<IActionResult> Add(User user)
+        public async Task<IActionResult> Add(CreateUserRequest request)
         {
-            await _userService.Create(user);
+            var userDto = request.Adapt<User>();
+            await _userService.Create(userDto);
 
             return Ok();
         }
