@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using DataAccess.Wrapper;
 using Domain.Interfaces;
 using BusinessLogic.Services;
+using Microsoft.OpenApi.Models;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +21,20 @@ builder.Services.AddScoped<IFilterService, FilterService>();
 builder.Services.AddScoped<IGoodCharachteristicService, GoodCharachteristicService>();
 builder.Services.AddScoped<IGoodService, GoodService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
+
+builder.Services.AddSwaggerGen(options =>
+{
+    options.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Version = "v1",
+        Title = "API »нтернет-магазина",
+        Description = "ѕредоставл€ет методы дл€ удобного взаимодействи€ с базой данных",
+    });
+
+    var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
+});
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

@@ -1,0 +1,403 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BackendAPI</name>
+    </assembly>
+    <members>
+        <member name="M:BackendAPI.Controllers.CartController.GetAll">
+            <summary>
+            Выводит  корзины всех пользователей
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.CartController.GetById(System.Int32,System.Int32)">
+            <summary>
+            Выводит позицию в корзине пользователя
+            </summary>
+            <param name="userId">id пользователя</param>
+            <param name="goodId">id товара</param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.CartController.Add(Domain.Models.Cart)">
+            <summary>
+            Добавляет новую позицию в корзине пользователя
+            </summary>
+            <remarks>
+            Пример запроса:
+            
+                {
+                    "userId": 1,
+                    "goodId": 1,
+                    "count": 5
+                }
+            
+            </remarks>
+            <param name="cart">Новая позиция</param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.CartController.Update(Domain.Models.Cart)">
+            <summary>
+            Обновляет позицию в корзине пользователя
+            </summary>
+            <remarks>
+            Пример запроса:
+            
+                {
+                    "userId": 1,
+                    "goodId": 1,
+                    "count": 4
+                }
+            
+            </remarks>
+            <param name="cart">Обновлённая позиция</param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.CartController.Delete(System.Int32,System.Int32)">
+            <summary>
+            Удаляет позицию в корзине пользователя
+            </summary>
+            <param name="userId">Id пользователя</param>
+            <param name="goodId">Id товара</param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.CategoryController.GetAll">
+            <summary>
+            Выводит все категории
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.CategoryController.GetById(System.Int32)">
+            <summary>
+            Выводит категории товара
+            </summary>
+            <param name="id">Id товара</param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.CategoryController.Add(Domain.Models.Category)">
+            <summary>
+            Добавляет категорию
+            </summary>
+            <remarks>
+            Пример запроса:
+            
+                {
+                    "id": 1,
+                    "parentId": 2 //Опционально
+                    "name": "Периферийные устройства",
+                    "description": "Все периферийные устройства" //Опционально
+                    "isDeleted": "03-31-2023 10:00:00" //Опционально
+                }
+                
+            </remarks>
+            <param name="category">Категория товара</param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.CategoryController.Update(Domain.Models.Category)">
+            <summary>
+            Изменяет категорию
+            </summary>
+            <remarks>
+            Пример запроса:
+            
+                {
+                    "id": 1,
+                    "parentId": 2 //Опционально
+                    "name": "Компьютерные мыши",
+                    "description": "Компьютерные мыши для ПК и ноутбуков" //Опционально
+                    "isDeleted": "03-31-2023 10:00:00" //Опционально
+                }
+                
+            </remarks>
+            <param name="category">Категория товара</param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.CategoryController.Delete(System.Int32)">
+            <summary>
+            Удаляет категорию
+            </summary>
+            <param name="id">id категории</param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.FilterController.GetAll">
+            <summary>
+            Выводит все фильтры
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.FilterController.Add(Domain.Models.Filter)">
+            <summary>
+            Добавляет новый фильтр
+            </summary>
+            <remarks>
+            Пример запроса:
+            
+                {
+                    "id": 1,
+                    "name": "Тип датчика",
+                    "categoryId": 1,
+                    "isDeleted": "31-03-2023 10:07:12" //Опционально
+                }
+                
+            </remarks>
+            <param name="filter">Фильтр</param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.FilterController.Update(Domain.Models.Filter)">
+            <summary>
+            Изменяет фильтр
+            </summary>
+            <remarks>
+            Пример запроса:
+            
+                {
+                    "id": 1,
+                    "name": "Наличие боковых кнопок",
+                    "categoryId": 1,
+                    "isDeleted": "31-03-2023 10:07:12" //Опционально
+                }
+                 
+            </remarks>
+            <param name="filter">Фильтр</param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.FilterController.Delete(System.Int32)">
+            <summary>
+            Удаляет фильтр
+            </summary>
+            <param name="id">Id фильтра</param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.GoodCharachteristicController.GetAll">
+            <summary>
+            Получает все характеристики товаров
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.GoodCharachteristicController.GetById(System.Int32,System.Int32)">
+            <summary>
+            Выводит конкретную характеристику товара
+            </summary>
+            <param name="goodId">Id товара</param>
+            <param name="filterId">Id фильтра (характеристики)</param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.GoodCharachteristicController.Add(Domain.Models.GoodCharachteristic)">
+            <summary>
+            Добавляет новую характеристику к товару
+            </summary>
+            <remarks>
+            Пример запроса:
+            
+                {
+                    "goodId": 1,
+                    "filterId": 1,
+                    "value": "да" //у данного атрибута тип sql_variant, так что можно вставлять любое значение, которое подходит для данной характеристики
+                }
+                
+            </remarks>
+            <param name="goodCharachteristic"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.GoodCharachteristicController.Update(Domain.Models.GoodCharachteristic)">
+            <summary>
+            Изменяет характеристику у товара
+            </summary>
+            <remarks>
+            Пример запроса:
+            
+                {
+                    "goodId": 1,
+                    "filterId": 1,
+                    "value": false //у данного атрибута тип sql_variant, так что можно вставлять любое значение, которое подходит для данной характеристики
+                }
+                
+            </remarks>
+            <param name="goodCharachteristic"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.GoodCharachteristicController.Delete(System.Int32,System.Int32)">
+            <summary>
+            Удаляет характеристику у товара
+            </summary>
+            <param name="goodId">Id товара</param>
+            <param name="filterId">Id фильтра(характеристики)</param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.GoodController.GetAll">
+            <summary>
+            Выводит все товары
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.GoodController.GetById(System.Int32)">
+            <summary>
+            Выводит товар по id
+            </summary>
+            <param name="id">Id товара</param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.GoodController.Add(Domain.Models.Good)">
+            <summary>
+            Добавляет новый товар
+            </summary>
+            <remarks>
+            Пример запроса:
+            
+                {
+                    "name": "Steelseries Rival 3",
+                    "description": "Компьютерная мышь Steelseries Rival 3",
+                    "amount": 19,
+                    "price": 2999.99,
+                    "preview": null,
+                    "isDeleted": "31-03-2023 10:18:54" //Опционально
+                }
+                
+            </remarks>
+            <param name="good">Товар</param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.GoodController.Update(Domain.Models.Good)">
+            <summary>
+            Изменяет товар
+            </summary>
+            <remarks>
+            Пример запроса:
+            
+                {
+                    "name": "Steelseries Rival 7",
+                    "description": "Компьютерная мышь Steelseries Rival 7",
+                    "amount": 19,
+                    "price": 2999.99,
+                    "preview": null,
+                    "isDeleted": "31-03-2023 10:18:54" //Опционально
+                }
+                
+            </remarks>
+            <param name="good">Товар</param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.GoodController.Delete(System.Int32)">
+            <summary>
+            Удаляет товар
+            </summary>
+            <param name="id">Id товара</param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.OrderController.GetAll">
+            <summary>
+            Выводит все заказы
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.OrderController.GetById(System.Int32)">
+            <summary>
+            Выводит конкретный заказ по его id
+            </summary>
+            <param name="id">Id заказа</param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.OrderController.Add(Domain.Models.Order)">
+            <summary>
+            Добавляет новый заказ
+            </summary>
+            <remarks>
+            Пример запроса:
+            
+                {
+                    "userId": 1,
+                    "fullCost" : 7891.45,
+                    "DeliveryMethod": "Доставка в постамат",
+                    "Status": "В обработке",
+                    "CreatedAt": "31-03-2023 10:23:00" //Опционально, если не указывать, то возьмётся текущая дата и время
+                    "deletedAt": "31-03-2023 10:24:00" //Опционально
+                }
+                
+            </remarks>
+            <param name="order">Заказ</param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.OrderController.Update(Domain.Models.Order)">
+            <summary>
+            Изменяет заказ
+            </summary>
+            <remarks>
+            Пример запроса:
+            
+                {
+                    "userId": 1,
+                    "fullCost" : 7891.45,
+                    "DeliveryMethod": "Доставка в постамат",
+                    "Status": "Доставлено",
+                    "CreatedAt": "31-03-2023 10:23:00" //Опционально, если не указывать, то возьмётся текущая дата и время
+                    "deletedAt": "31-03-2023 10:24:00" //Опционально
+                }
+                
+            </remarks>
+            <param name="order">Заказ</param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.OrderController.Delete(System.Int32)">
+            <summary>
+            Удаляет заказ
+            </summary>
+            <param name="id">Id заказа</param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.UserController.Add(Domain.Models.User)">
+            <summary>
+            Добавляет нового пользователя
+            </summary>
+            <remarks>
+            Пример запроса:
+            
+                {
+                    "name": "Иванов",
+                    "surname": "Иван",
+                    "email": "JustEmail@mail.com",
+                    "password": "12345",
+                    "phoneNumber": 88005553535, //Опционально
+                    "balance": 10000.35,
+                    "role": "User",
+                    "birthday": "15-04-1999", //Опционально
+                    "createdAt": "17-03-2023T11:39:43", //Опционально, если не указывать возьмется текущее время и дата
+                    "isDeleted": "17-03-2023" //Опционально
+                }
+            
+            </remarks>
+            <param name="user">Пользователь</param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.UserController.Update(Domain.Models.User)">
+            <summary>
+            Изменяет данные пользователя
+            </summary>
+            <remarks>
+            Пример запроса
+            
+                {
+                    "id": 1,
+                    "name": "Иванов",
+                    "surname": "Иван",
+                    "email": "JustEmail@mail.com",
+                    "password": "12345",
+                    "phoneNumber": 88005553535, //Опционально
+                    "balance": 10000.35,
+                    "role": "User",
+                    "birthday": "15-04-1999", //Опционально
+                    "createdAt": "17-03-2023T11:39:43", //Опционально, если не указывать возьмется текущее время и дата
+                    "isDeleted": "17-03-2023" //Опционально
+                }
+                
+            </remarks>
+            <param name="user">Изменённая модели пользователя</param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.UserController.Delete(System.Int32)">
+            <summary>
+            Удаляет пользователя
+            </summary>
+            <param name="id">id пользователя</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

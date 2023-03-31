@@ -15,12 +15,39 @@ namespace BackendAPI.Controllers
             _goodService = goodService;
         }
 
+        /// <summary>
+        /// Выводит все товары
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public async Task<IActionResult> GetAll() => Ok(await _goodService.GetAll());
 
+        /// <summary>
+        /// Выводит товар по id
+        /// </summary>
+        /// <param name="id">Id товара</param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id) => Ok(await _goodService.GetById(id));
 
+        /// <summary>
+        /// Добавляет новый товар
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        /// 
+        ///     {
+        ///         "name": "Steelseries Rival 3",
+        ///         "description": "Компьютерная мышь Steelseries Rival 3",
+        ///         "amount": 19,
+        ///         "price": 2999.99,
+        ///         "preview": null,
+        ///         "isDeleted": "31-03-2023 10:18:54" //Опционально
+        ///     }
+        ///     
+        /// </remarks>
+        /// <param name="good">Товар</param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> Add(Good good)
         {
@@ -29,6 +56,24 @@ namespace BackendAPI.Controllers
             return Ok();
         }
 
+        /// <summary>
+        /// Изменяет товар
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        /// 
+        ///     {
+        ///         "name": "Steelseries Rival 7",
+        ///         "description": "Компьютерная мышь Steelseries Rival 7",
+        ///         "amount": 19,
+        ///         "price": 2999.99,
+        ///         "preview": null,
+        ///         "isDeleted": "31-03-2023 10:18:54" //Опционально
+        ///     }
+        ///     
+        /// </remarks>
+        /// <param name="good">Товар</param>
+        /// <returns></returns>
         [HttpPut]
         public async Task<IActionResult> Update(Good good)
         {
@@ -37,6 +82,11 @@ namespace BackendAPI.Controllers
             return Ok();
         }
 
+        /// <summary>
+        /// Удаляет товар
+        /// </summary>
+        /// <param name="id">Id товара</param>
+        /// <returns></returns>
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {

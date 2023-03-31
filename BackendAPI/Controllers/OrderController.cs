@@ -15,12 +15,39 @@ namespace BackendAPI.Controllers
             _orderService = orderService;
         }
 
+        /// <summary>
+        /// Выводит все заказы
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public async Task<IActionResult> GetAll() => Ok(await _orderService.GetAll());
 
+        /// <summary>
+        /// Выводит конкретный заказ по его id
+        /// </summary>
+        /// <param name="id">Id заказа</param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id) => Ok(await _orderService.GetById(id));
 
+        /// <summary>
+        /// Добавляет новый заказ
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        /// 
+        ///     {
+        ///         "userId": 1,
+        ///         "fullCost" : 7891.45,
+        ///         "DeliveryMethod": "Доставка в постамат",
+        ///         "Status": "В обработке",
+        ///         "CreatedAt": "31-03-2023 10:23:00" //Опционально, если не указывать, то возьмётся текущая дата и время
+        ///         "deletedAt": "31-03-2023 10:24:00" //Опционально
+        ///     }
+        ///     
+        /// </remarks>
+        /// <param name="order">Заказ</param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> Add(Order order)
         {
@@ -29,6 +56,24 @@ namespace BackendAPI.Controllers
             return Ok();
         }
 
+        /// <summary>
+        /// Изменяет заказ
+        /// </summary>
+        /// <remarks>
+        /// Пример запроса:
+        /// 
+        ///     {
+        ///         "userId": 1,
+        ///         "fullCost" : 7891.45,
+        ///         "DeliveryMethod": "Доставка в постамат",
+        ///         "Status": "Доставлено",
+        ///         "CreatedAt": "31-03-2023 10:23:00" //Опционально, если не указывать, то возьмётся текущая дата и время
+        ///         "deletedAt": "31-03-2023 10:24:00" //Опционально
+        ///     }
+        ///     
+        /// </remarks>
+        /// <param name="order">Заказ</param>
+        /// <returns></returns>
         [HttpPut]
         public async Task<IActionResult> Update(Order order)
         {
@@ -37,6 +82,11 @@ namespace BackendAPI.Controllers
             return Ok();
         }
 
+        /// <summary>
+        /// Удаляет заказ
+        /// </summary>
+        /// <param name="id">Id заказа</param>
+        /// <returns></returns>
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {
