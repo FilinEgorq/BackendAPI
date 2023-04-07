@@ -1,0 +1,20 @@
+name: dotnet format
+on:
+push:
+paths:
+- "**.cs"
+- ".editorconfig"
+jobs:
+check-format:
+runs-on: windows-latest
+steps:
+- name: Setup .NET Core
+uses: actions/setup-dotnet@v1
+with:
+dotnet-version: '6.0.x'
+- name: Check out code
+uses: actions/checkout@v2
+- name: Run dotnet format
+run: dotnet-format --folder --check --verbosity diagnostic
+- build:
+run: dotnet build
