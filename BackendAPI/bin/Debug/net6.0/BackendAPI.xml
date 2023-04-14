@@ -343,7 +343,7 @@
             <param name="id">Id заказа</param>
             <returns></returns>
         </member>
-        <member name="M:BackendAPI.Controllers.UserController.Add(Domain.Models.User)">
+        <member name="M:BackendAPI.Controllers.UserController.Add(BackendAPI.Contracts.User.CreateUserRequest)">
             <summary>
             Добавляет нового пользователя
             </summary>
@@ -364,7 +364,7 @@
                 }
             
             </remarks>
-            <param name="user">Пользователь</param>
+            <param name="request">Пользователь</param>
             <returns></returns>
         </member>
         <member name="M:BackendAPI.Controllers.UserController.Update(Domain.Models.User)">

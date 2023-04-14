@@ -130,3 +130,5 @@ C:\Users\filin\Desktop\егор\ДЗ\3 курс\Учебная практика\
 C:\Users\filin\Desktop\егор\ДЗ\3 курс\Учебная практика\BackendAPI\BackendAPI\BackendAPI\bin\Debug\net6.0\Domain.pdb
 C:\Users\filin\Desktop\егор\ДЗ\3 курс\Учебная практика\BackendAPI\BackendAPI\BackendAPI\bin\Debug\net6.0\BackendAPI.xml
 C:\Users\filin\Desktop\егор\ДЗ\3 курс\Учебная практика\BackendAPI\BackendAPI\BackendAPI\obj\Debug\net6.0\BackendAPI.xml
+C:\Users\filin\Desktop\егор\ДЗ\3 курс\Учебная практика\BackendAPI\BackendAPI\BackendAPI\bin\Debug\net6.0\Mapster.dll
+C:\Users\filin\Desktop\егор\ДЗ\3 курс\Учебная практика\BackendAPI\BackendAPI\BackendAPI\bin\Debug\net6.0\Mapster.Core.dll
