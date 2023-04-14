@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Domain.Interfaces;
 using Domain.Models;
+using Mapster;
+using BackendAPI.Contracts.Filter;
 
 namespace BackendAPI.Controllers
 {
@@ -22,8 +24,18 @@ namespace BackendAPI.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll() => Ok(await _filterService.GetAll());
 
+        /// <summary>
+        /// Получает фильтр по его Id
+        /// </summary>
+        /// <param name="id">Id фильтра</param>
+        /// <returns></returns>
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(int id) => Ok(await _filterService.GetById(id));
+        public async Task<IActionResult> GetById(int id)
+        {
+            var result = _filterService.GetById(id).Adapt<GetFilterResponse>();
+
+            return Ok(result);
+        }
 
         /// <summary>
         /// Добавляет новый фильтр

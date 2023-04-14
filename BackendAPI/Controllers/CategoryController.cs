@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Domain.Interfaces;
 using Domain.Models;
+using Mapster;
+using BackendAPI.Contracts.Category;
 
 namespace BackendAPI.Controllers
 {
@@ -28,7 +30,12 @@ namespace BackendAPI.Controllers
         /// <param name="id">Id товара</param>
         /// <returns></returns>
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(int id) => Ok(await _categoryService.GetById(id));
+        public async Task<IActionResult> GetById(int id)
+        {
+            var category = await _categoryService.GetById(id);
+
+            return Ok(category.Adapt<GetCategoryResponse>());
+        }
 
         /// <summary>
         /// Добавляет категорию
@@ -48,9 +55,11 @@ namespace BackendAPI.Controllers
         /// <param name="category">Категория товара</param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<IActionResult> Add(Category category)
+        public async Task<IActionResult> Add(CreateCategoryRequest request)
         {
-            await _categoryService.Create(category);
+            var categoryDto = request.Adapt<Category>();
+
+            await _categoryService.Create(categoryDto);
 
             return Ok();
         }
@@ -73,9 +82,11 @@ namespace BackendAPI.Controllers
         /// <param name="category">Категория товара</param>
         /// <returns></returns>
         [HttpPut]
-        public async Task<IActionResult> Update(Category category)
+        public async Task<IActionResult> Update(CreateCategoryRequest request)
         {
-            await _categoryService.Update(category);
+            var categoryDto = request.Adapt<Category>();
+
+            await _categoryService.Update(categoryDto);
 
             return Ok();
         }

@@ -367,7 +367,7 @@
             <param name="request">Пользователь</param>
             <returns></returns>
         </member>
-        <member name="M:BackendAPI.Controllers.UserController.Update(Domain.Models.User)">
+        <member name="M:BackendAPI.Controllers.UserController.Update(BackendAPI.Contracts.User.UpdateUserRequest)">
             <summary>
             Изменяет данные пользователя
             </summary>

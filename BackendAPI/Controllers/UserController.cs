@@ -85,9 +85,10 @@ namespace BackendAPI.Controllers
         /// <param name="user">Изменённая модели пользователя</param>
         /// <returns></returns>
         [HttpPut]
-        public async Task<IActionResult> Update(User user)
+        public async Task<IActionResult> Update(UpdateUserRequest request)
         {
-            await _userService.Update(user);
+            var userDto = request.Adapt<User>();
+            await _userService.Update(userDto);
 
             return Ok();
         }

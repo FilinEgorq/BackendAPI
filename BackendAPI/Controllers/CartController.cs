@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Domain.Interfaces;
 using Domain.Models;
+using BackendAPI.Contracts.Cart;
+using Mapster;
 
 namespace BackendAPI.Controllers
 {
@@ -29,7 +31,10 @@ namespace BackendAPI.Controllers
         /// <param name="goodId">id товара</param>
         /// <returns></returns>
         [HttpGet("{userId}/{goodId}")]
-        public async Task<IActionResult> GetById(int userId, int goodId) => Ok(await _cartService.GetById(userId, goodId));
+        public async Task<IActionResult> GetById(int userId, int goodId)
+        {
+            return Ok(_cartService.GetById(userId, goodId).Adapt<CartRequestAndResponse>());
+        }
 
         /// <summary>
         /// Добавляет новую позицию в корзине пользователя
@@ -47,9 +52,11 @@ namespace BackendAPI.Controllers
         /// <param name="cart">Новая позиция</param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<IActionResult> Add(Cart cart)
+        public async Task<IActionResult> Add(CartRequestAndResponse response)
         {
-            await _cartService.Create(cart);
+            var cartDto = response.Adapt<Cart>();
+
+            await _cartService.Create(cartDto);
 
             return Ok();
         }
@@ -70,9 +77,11 @@ namespace BackendAPI.Controllers
         /// <param name="cart">Обновлённая позиция</param>
         /// <returns></returns>
         [HttpPut]
-        public async Task<IActionResult> Update(Cart cart)
+        public async Task<IActionResult> Update(CartRequestAndResponse request)
         {
-            await _cartService.Update(cart);
+            var cartDto = request.Adapt<Cart>();
+
+            await _cartService.Update(cartDto);
 
             return Ok();
         }
