@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Domain.Interfaces;
 using Domain.Models;
+using Mapster;
+using BackendAPI.Contracts.Good;
 
 namespace BackendAPI.Controllers
 {
@@ -28,7 +30,7 @@ namespace BackendAPI.Controllers
         /// <param name="id">Id товара</param>
         /// <returns></returns>
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(int id) => Ok(await _goodService.GetById(id));
+        public async Task<IActionResult> GetById(int id) => Ok(_goodService.GetById(id).Adapt<GetGoodResponse>());
 
         /// <summary>
         /// Добавляет новый товар
@@ -46,12 +48,14 @@ namespace BackendAPI.Controllers
         ///     }
         ///     
         /// </remarks>
-        /// <param name="good">Товар</param>
+        /// <param name="goodRequest">Товар</param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<IActionResult> Add(Good good)
+        public async Task<IActionResult> Add(CreateGoodRequest goodRequest)
         {
-            await _goodService.Create(good);
+            var goodDto = goodRequest.Adapt<Good>();
+
+            await _goodService.Create(goodDto);
 
             return Ok();
         }

@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Domain.Interfaces;
 using Domain.Models;
+using Mapster;
+using BackendAPI.Contracts.GoodCharachteristic;
 
 namespace BackendAPI.Controllers
 {
@@ -29,7 +31,10 @@ namespace BackendAPI.Controllers
         /// <param name="filterId">Id фильтра (характеристики)</param>
         /// <returns></returns>
         [HttpGet("{id}/{filterId}")]
-        public async Task<IActionResult> GetById(int goodId, int filterId) => Ok(await _userService.GetById(goodId, filterId));
+        public async Task<IActionResult> GetById(int goodId, int filterId)
+        {
+            return Ok(_userService.GetById(goodId, filterId).Adapt<CreateGoodCharachteristicRequest>());
+        }
 
         /// <summary>
         /// Добавляет новую характеристику к товару
@@ -47,9 +52,11 @@ namespace BackendAPI.Controllers
         /// <param name="goodCharachteristic"></param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<IActionResult> Add(GoodCharachteristic goodCharachteristic)
+        public async Task<IActionResult> Add(CreateGoodCharachteristicRequest goodCharachteristic)
         {
-            await _userService.Create(goodCharachteristic);
+            var goodCharachteristicDto = goodCharachteristic.Adapt<GoodCharachteristic>();
+
+            await _userService.Create(goodCharachteristicDto);
 
             return Ok();
         }

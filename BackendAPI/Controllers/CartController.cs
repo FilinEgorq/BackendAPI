@@ -77,11 +77,9 @@ namespace BackendAPI.Controllers
         /// <param name="cart">Обновлённая позиция</param>
         /// <returns></returns>
         [HttpPut]
-        public async Task<IActionResult> Update(CartRequestAndResponse request)
+        public async Task<IActionResult> Update(Cart cart)
         {
-            var cartDto = request.Adapt<Cart>();
-
-            await _cartService.Update(cartDto);
+            await _cartService.Update(cart);
 
             return Ok();
         }

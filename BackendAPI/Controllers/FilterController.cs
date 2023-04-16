@@ -54,9 +54,11 @@ namespace BackendAPI.Controllers
         /// <param name="filter">Фильтр</param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<IActionResult> Add(Filter filter)
+        public async Task<IActionResult> Add(CreateFilterRequest request)
         {
-            await _filterService.Create(filter);
+            var filterDto = request.Adapt<Filter>();
+
+            await _filterService.Create(filterDto);
 
             return Ok();
         }

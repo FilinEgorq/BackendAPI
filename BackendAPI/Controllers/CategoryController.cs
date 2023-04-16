@@ -82,11 +82,9 @@ namespace BackendAPI.Controllers
         /// <param name="category">Категория товара</param>
         /// <returns></returns>
         [HttpPut]
-        public async Task<IActionResult> Update(CreateCategoryRequest request)
+        public async Task<IActionResult> Update(Category category)
         {
-            var categoryDto = request.Adapt<Category>();
-
-            await _categoryService.Update(categoryDto);
+            await _categoryService.Update(category);
 
             return Ok();
         }

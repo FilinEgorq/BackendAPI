@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Domain.Interfaces;
 using Domain.Models;
+using Mapster;
+using BackendAPI.Contracts.Order;
 
 namespace BackendAPI.Controllers
 {
@@ -28,7 +30,10 @@ namespace BackendAPI.Controllers
         /// <param name="id">Id заказа</param>
         /// <returns></returns>
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(int id) => Ok(await _orderService.GetById(id));
+        public async Task<IActionResult> GetById(int id)
+        {
+            return Ok(_orderService.GetById(id).Adapt<GetOrderResponse>());
+        }
 
         /// <summary>
         /// Добавляет новый заказ
@@ -46,12 +51,14 @@ namespace BackendAPI.Controllers
         ///     }
         ///     
         /// </remarks>
-        /// <param name="order">Заказ</param>
+        /// <param name="request">Заказ</param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<IActionResult> Add(Order order)
+        public async Task<IActionResult> Add(CreateOrderRequest request)
         {
-            await _orderService.Create(order);
+            var orderDto = request.Adapt<Order>();
+
+            await _orderService.Create(orderDto);
 
             return Ok();
         }
