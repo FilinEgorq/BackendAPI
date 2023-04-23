@@ -112,7 +112,7 @@ namespace DataAccess.Wrapper
                 return _order;
             }
         }
-
+        #pragma warning disable CS8618
         public RepositoryWrapper(InternetShopContext repositoryContext) => _repoContext = repositoryContext;    
 
         public async Task Save() => await _repoContext.SaveChangesAsync();

@@ -49,7 +49,7 @@ namespace BackendAPI.Controllers
         ///     }
         /// 
         /// </remarks>
-        /// <param name="cart">Новая позиция</param>
+        /// <param name="response">Новая позиция</param>
         /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> Add(CartRequestAndResponse response)

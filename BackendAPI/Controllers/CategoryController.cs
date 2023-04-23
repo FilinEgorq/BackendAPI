@@ -52,7 +52,7 @@ namespace BackendAPI.Controllers
         ///     }
         ///     
         /// </remarks>
-        /// <param name="category">Категория товара</param>
+        /// <param name="request">Категория товара</param>
         /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> Add(CreateCategoryRequest request)

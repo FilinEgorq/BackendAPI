@@ -51,7 +51,7 @@ namespace BackendAPI.Controllers
         ///     }
         ///     
         /// </remarks>
-        /// <param name="filter">Фильтр</param>
+        /// <param name="request">Фильтр</param>
         /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> Add(CreateFilterRequest request)

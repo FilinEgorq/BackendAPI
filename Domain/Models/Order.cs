@@ -10,6 +10,6 @@
         public DateTime CreatedAt { get; set; }
         public DateTime? IsDeleted { get; set; }
 
-        public virtual User User { get; set; }
+        public virtual User User { get; set; } = null!;
     }
 }

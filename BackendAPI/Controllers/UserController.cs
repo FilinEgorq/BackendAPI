@@ -82,7 +82,7 @@ namespace BackendAPI.Controllers
         ///     }
         ///     
         /// </remarks>
-        /// <param name="user">Изменённая модели пользователя</param>
+        /// <param name="request">Изменённая модели пользователя</param>
         /// <returns></returns>
         [HttpPut]
         public async Task<IActionResult> Update(UpdateUserRequest request)

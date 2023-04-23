@@ -102,7 +102,7 @@ csharp_style_inlined_variable_declaration = true:suggestion
 [*.{cs,vb}]
 dotnet_style_operator_placement_when_wrapping = beginning_of_line
 tab_width = 4
-indent_size = 4
+indent_size = tab
 end_of_line = crlf
 dotnet_style_coalesce_expression = true:suggestion
 dotnet_style_null_propagation = true:suggestion
@@ -210,6 +210,13 @@ csharp_style_expression_bodied_local_functions = false:silent
 
 # CS1591: Отсутствует комментарий XML для открытого видимого типа или члена
 dotnet_diagnostic.CS1591.severity = none
+csharp_style_prefer_utf8_string_literals = true:suggestion
+
+# CS1998: В асинхронном методе отсутствуют операторы await, будет выполнен синхронный метод
+dotnet_diagnostic.CS1998.severity = none
+csharp_style_prefer_method_group_conversion = true:silent
+csharp_style_prefer_top_level_statements = true:silent
+csharp_style_prefer_readonly_struct = true:suggestion
 
 [*.vb]
 #### Стили именования ####
