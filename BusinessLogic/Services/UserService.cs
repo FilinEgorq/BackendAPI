@@ -36,6 +36,8 @@ namespace BusinessLogic.Services
 
             List<string> roles = new List<string>() { "Administrator", "Moderator", "User" };
 
+            if (model.Balance < 0) throw new ArgumentException(nameof(model.Balance));
+
             if (!roles.Any(el => el == model.Role)) throw new ArgumentException(nameof(model.Role));
 
 
