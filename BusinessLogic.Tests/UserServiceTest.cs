@@ -2,11 +2,6 @@
 using Domain.Interfaces;
 using Moq;
 using Domain.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BusinessLogic.Tests
 {
@@ -41,7 +36,7 @@ namespace BusinessLogic.Tests
 
         //Тест на проверку вызова исключения при попытке создать нового пользователя с аргументом null
         [Fact]
-        public async Task CreateAsunc_NullUser_ShouldThrownNullArgumentException()
+        public async Task CreateAsync_NullUser_ShouldThrownNullArgumentException()
         {
             #pragma warning disable CS8625
             var ex = await Assert.ThrowsAnyAsync<ArgumentNullException>(() => service.Create(null));
