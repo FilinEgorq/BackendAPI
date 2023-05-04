@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BackendAPI.Contracts.User;
 using Domain.Interfaces;
 using Domain.Models;
-using BackendAPI.Contracts.User;
 using Mapster;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BackendAPI.Controllers
 {
@@ -16,7 +16,7 @@ namespace BackendAPI.Controllers
         {
             _userService = userService;
         }
-        
+
         [HttpGet]
         public async Task<IActionResult> GetAll() => Ok(await _userService.GetAll());
 
@@ -105,5 +105,5 @@ namespace BackendAPI.Controllers
 
             return Ok();
         }
-     }
+    }
 }

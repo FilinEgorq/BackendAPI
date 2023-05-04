@@ -18,7 +18,7 @@
             <param name="goodId">id товара</param>
             <returns></returns>
         </member>
-        <member name="M:BackendAPI.Controllers.CartController.Add(Domain.Models.Cart)">
+        <member name="M:BackendAPI.Controllers.CartController.Add(BackendAPI.Contracts.Cart.CartRequestAndResponse)">
             <summary>
             Добавляет новую позицию в корзине пользователя
             </summary>
@@ -32,7 +32,7 @@
                 }
             
             </remarks>
-            <param name="cart">Новая позиция</param>
+            <param name="response">Новая позиция</param>
             <returns></returns>
         </member>
         <member name="M:BackendAPI.Controllers.CartController.Update(Domain.Models.Cart)">
@@ -73,7 +73,7 @@
             <param name="id">Id товара</param>
             <returns></returns>
         </member>
-        <member name="M:BackendAPI.Controllers.CategoryController.Add(Domain.Models.Category)">
+        <member name="M:BackendAPI.Controllers.CategoryController.Add(BackendAPI.Contracts.Category.CreateCategoryRequest)">
             <summary>
             Добавляет категорию
             </summary>
@@ -89,7 +89,7 @@
                 }
                 
             </remarks>
-            <param name="category">Категория товара</param>
+            <param name="request">Категория товара</param>
             <returns></returns>
         </member>
         <member name="M:BackendAPI.Controllers.CategoryController.Update(Domain.Models.Category)">
@@ -124,7 +124,14 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:BackendAPI.Controllers.FilterController.Add(Domain.Models.Filter)">
+        <member name="M:BackendAPI.Controllers.FilterController.GetById(System.Int32)">
+            <summary>
+            Получает фильтр по его Id
+            </summary>
+            <param name="id">Id фильтра</param>
+            <returns></returns>
+        </member>
+        <member name="M:BackendAPI.Controllers.FilterController.Add(BackendAPI.Contracts.Filter.CreateFilterRequest)">
             <summary>
             Добавляет новый фильтр
             </summary>
@@ -139,7 +146,7 @@
                 }
                 
             </remarks>
-            <param name="filter">Фильтр</param>
+            <param name="request">Фильтр</param>
             <returns></returns>
         </member>
         <member name="M:BackendAPI.Controllers.FilterController.Update(Domain.Models.Filter)">
@@ -181,7 +188,7 @@
             <param name="filterId">Id фильтра (характеристики)</param>
             <returns></returns>
         </member>
-        <member name="M:BackendAPI.Controllers.GoodCharachteristicController.Add(Domain.Models.GoodCharachteristic)">
+        <member name="M:BackendAPI.Controllers.GoodCharachteristicController.Add(BackendAPI.Contracts.GoodCharachteristic.CreateGoodCharachteristicRequest)">
             <summary>
             Добавляет новую характеристику к товару
             </summary>
@@ -236,7 +243,7 @@
             <param name="id">Id товара</param>
             <returns></returns>
         </member>
-        <member name="M:BackendAPI.Controllers.GoodController.Add(Domain.Models.Good)">
+        <member name="M:BackendAPI.Controllers.GoodController.Add(BackendAPI.Contracts.Good.CreateGoodRequest)">
             <summary>
             Добавляет новый товар
             </summary>
@@ -253,7 +260,7 @@
                 }
                 
             </remarks>
-            <param name="good">Товар</param>
+            <param name="goodRequest">Товар</param>
             <returns></returns>
         </member>
         <member name="M:BackendAPI.Controllers.GoodController.Update(Domain.Models.Good)">
@@ -296,7 +303,7 @@
             <param name="id">Id заказа</param>
             <returns></returns>
         </member>
-        <member name="M:BackendAPI.Controllers.OrderController.Add(Domain.Models.Order)">
+        <member name="M:BackendAPI.Controllers.OrderController.Add(BackendAPI.Contracts.Order.CreateOrderRequest)">
             <summary>
             Добавляет новый заказ
             </summary>
@@ -313,7 +320,7 @@
                 }
                 
             </remarks>
-            <param name="order">Заказ</param>
+            <param name="request">Заказ</param>
             <returns></returns>
         </member>
         <member name="M:BackendAPI.Controllers.OrderController.Update(Domain.Models.Order)">
@@ -367,7 +374,7 @@
             <param name="request">Пользователь</param>
             <returns></returns>
         </member>
-        <member name="M:BackendAPI.Controllers.UserController.Update(Domain.Models.User)">
+        <member name="M:BackendAPI.Controllers.UserController.Update(BackendAPI.Contracts.User.UpdateUserRequest)">
             <summary>
             Изменяет данные пользователя
             </summary>
@@ -389,7 +396,7 @@
                 }
                 
             </remarks>
-            <param name="user">Изменённая модели пользователя</param>
+            <param name="request">Изменённая модели пользователя</param>
             <returns></returns>
         </member>
         <member name="M:BackendAPI.Controllers.UserController.Delete(System.Int32)">

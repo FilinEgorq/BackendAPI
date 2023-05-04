@@ -1,8 +1,10 @@
 # Rules in this file were initially inferred by Visual Studio IntelliCode from the C:\Users\filin\Desktop\егор\ДЗ\3 курс\Учебная практика\BackendAPI\BackendAPI\BackendAPI\ codebase based on best match to current usage at 31.03.2023
 # You can modify the rules from these initially generated values to suit your own policies
 # You can learn more about editorconfig here: https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference
-[*.cs]
-
+[*]
+indent_style = space
+indent_size = space
+tab_size = 4
 
 #Core editorconfig formatting - indentation
 
@@ -102,7 +104,7 @@ csharp_style_inlined_variable_declaration = true:suggestion
 [*.{cs,vb}]
 dotnet_style_operator_placement_when_wrapping = beginning_of_line
 tab_width = 4
-indent_size = tab
+indent_size = 4
 end_of_line = crlf
 dotnet_style_coalesce_expression = true:suggestion
 dotnet_style_null_propagation = true:suggestion

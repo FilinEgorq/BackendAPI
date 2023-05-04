@@ -1,6 +1,6 @@
-﻿using Domain.Interfaces;
+﻿using DataAccess.Context;
+using Domain.Interfaces;
 using Domain.Models;
-using DataAccess.Context;
 
 namespace DataAccess.Repositories
 {

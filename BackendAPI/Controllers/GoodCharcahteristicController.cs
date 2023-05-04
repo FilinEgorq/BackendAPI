@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BackendAPI.Contracts.GoodCharachteristic;
 using Domain.Interfaces;
 using Domain.Models;
 using Mapster;
-using BackendAPI.Contracts.GoodCharachteristic;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BackendAPI.Controllers
 {

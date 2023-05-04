@@ -13,7 +13,7 @@
         public long PhoneNumber { get; set; }
 
         public double Balance { get; set; }
-        
+
         public string Role { get; set; } = null!;
 
         public DateTime? BirthDay { get; set; }
