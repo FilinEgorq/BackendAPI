@@ -8,23 +8,23 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Egor\\.nuget\\packages\\": {},
+    "C:\\Users\\filin\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Egor\\source\\repos\\BackendAPI\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Users\\filin\\Desktop\\егор\\ДЗ\\3 курс\\Учебная практика\\BackendAPI\\BackendAPI\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Users\\Egor\\source\\repos\\BackendAPI\\Domain\\Domain.csproj",
-      "packagesPath": "C:\\Users\\Egor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Egor\\source\\repos\\BackendAPI\\Domain\\obj\\",
+      "projectPath": "C:\\Users\\filin\\Desktop\\егор\\ДЗ\\3 курс\\Учебная практика\\BackendAPI\\BackendAPI\\Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\filin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\filin\\Desktop\\егор\\ДЗ\\3 курс\\Учебная практика\\BackendAPI\\BackendAPI\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Egor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\filin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -56,36 +56,25 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.11, 6.0.11]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.11, 6.0.11]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.11, 6.0.11]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
->>>>>>> f312787626094155a84ed8399f9a212375f118ee
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Ошибка чтения файла кэша C:\\Users\\filin\\Desktop\\егор\\ДЗ\\3 курс\\Учебная практика\\BackendAPI\\BackendAPI\\Domain\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

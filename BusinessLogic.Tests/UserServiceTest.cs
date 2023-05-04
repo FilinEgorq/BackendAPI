@@ -1,10 +1,11 @@
 ﻿using BusinessLogic.Services;
 using Domain.Interfaces;
 using Domain.Models;
-<<<<<<< HEAD
-using Moq;
-=======
->>>>>>> f312787626094155a84ed8399f9a212375f118ee
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace BusinessLogic.Tests
 {

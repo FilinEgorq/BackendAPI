@@ -1,19 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "VRDbHJS+FMO3eVSvFUu21T/HiujO0u90ezlPeich9i8vvXA9yqKVaDIYJVicRnAFsF+e08ZayzVQyFGvJlo1sQ==",
+  "dgSpecHash": "kSDG6bF1gnRlOE+22AxJKtjVQxrP6/o33ykmM5IalB+LEnzXvcGTs5APS9E1m1tIt0qBqA2ueh4avzI3IJumTw==",
   "success": true,
   "projectFilePath": "C:\\Users\\filin\\Desktop\\егор\\ДЗ\\3 курс\\Учебная практика\\BackendAPI\\BackendAPI\\Domain\\Domain.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\filin\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.11\\microsoft.netcore.app.ref.6.0.11.nupkg.sha512",
-    "C:\\Users\\filin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.11\\microsoft.windowsdesktop.app.ref.6.0.11.nupkg.sha512",
-    "C:\\Users\\filin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.11\\microsoft.aspnetcore.app.ref.6.0.11.nupkg.sha512"
-  ],
-=======
-  "dgSpecHash": "JzMJVpdjbHm2zVGTXzVUZcNS4j4Chhm4HvJU/rLU8RJzWH0q9CFqtXpNTBMclY3nq9w2p7jMN1np6nz0DL4fDQ==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Egor\\source\\repos\\BackendAPI\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
->>>>>>> f312787626094155a84ed8399f9a212375f118ee
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Ошибка чтения файла кэша C:\\Users\\filin\\Desktop\\егор\\ДЗ\\3 курс\\Учебная практика\\BackendAPI\\BackendAPI\\Domain\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
