@@ -2,5 +2,5 @@
 
 namespace Domain.Interfaces
 {
-    public interface IGoodRepository : IRepositoryBase<Good> { }
+	public interface IGoodRepository : IRepositoryBase<Good> { }
 }

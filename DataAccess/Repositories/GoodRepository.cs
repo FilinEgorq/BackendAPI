@@ -4,8 +4,8 @@ using Domain.Models;
 
 namespace DataAccess.Repositories
 {
-    public class GoodRepository : RepositoryBase<Good>, IGoodRepository
-    {
-        public GoodRepository(InternetShopContext repositoryContext) : base(repositoryContext) { }
-    }
+	public class GoodRepository : RepositoryBase<Good>, IGoodRepository
+	{
+		public GoodRepository(InternetShopContext repositoryContext) : base(repositoryContext) { }
+	}
 }

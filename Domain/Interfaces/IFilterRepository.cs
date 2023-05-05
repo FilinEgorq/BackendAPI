@@ -2,5 +2,5 @@
 
 namespace Domain.Interfaces
 {
-    public interface IFilterRepository : IRepositoryBase<Filter> { }
+	public interface IFilterRepository : IRepositoryBase<Filter> { }
 }

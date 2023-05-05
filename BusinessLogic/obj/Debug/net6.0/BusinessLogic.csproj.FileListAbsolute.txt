@@ -44,3 +44,20 @@ C:\Users\Egor\source\repos\BackendAPI\BusinessLogic\obj\Debug\net6.0\refint\Busi
 C:\Users\Egor\source\repos\BackendAPI\BusinessLogic\obj\Debug\net6.0\BusinessLogic.pdb
 C:\Users\Egor\source\repos\BackendAPI\BusinessLogic\obj\Debug\net6.0\BusinessLogic.genruntimeconfig.cache
 C:\Users\Egor\source\repos\BackendAPI\BusinessLogic\obj\Debug\net6.0\ref\BusinessLogic.dll
+C:\Users\filin\Desktop\егор\ДЗ\3 курс\Технология разработки ПО\InternetShop\BusinessLogic\bin\Debug\net6.0\BusinessLogic.deps.json
+C:\Users\filin\Desktop\егор\ДЗ\3 курс\Технология разработки ПО\InternetShop\BusinessLogic\bin\Debug\net6.0\BusinessLogic.runtimeconfig.json
+C:\Users\filin\Desktop\егор\ДЗ\3 курс\Технология разработки ПО\InternetShop\BusinessLogic\bin\Debug\net6.0\BusinessLogic.dll
+C:\Users\filin\Desktop\егор\ДЗ\3 курс\Технология разработки ПО\InternetShop\BusinessLogic\bin\Debug\net6.0\BusinessLogic.pdb
+C:\Users\filin\Desktop\егор\ДЗ\3 курс\Технология разработки ПО\InternetShop\BusinessLogic\bin\Debug\net6.0\Domain.dll
+C:\Users\filin\Desktop\егор\ДЗ\3 курс\Технология разработки ПО\InternetShop\BusinessLogic\bin\Debug\net6.0\Domain.pdb
+C:\Users\filin\Desktop\егор\ДЗ\3 курс\Технология разработки ПО\InternetShop\BusinessLogic\obj\Debug\net6.0\BusinessLogic.csproj.AssemblyReference.cache
+C:\Users\filin\Desktop\егор\ДЗ\3 курс\Технология разработки ПО\InternetShop\BusinessLogic\obj\Debug\net6.0\BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\filin\Desktop\егор\ДЗ\3 курс\Технология разработки ПО\InternetShop\BusinessLogic\obj\Debug\net6.0\BusinessLogic.AssemblyInfoInputs.cache
+C:\Users\filin\Desktop\егор\ДЗ\3 курс\Технология разработки ПО\InternetShop\BusinessLogic\obj\Debug\net6.0\BusinessLogic.AssemblyInfo.cs
+C:\Users\filin\Desktop\егор\ДЗ\3 курс\Технология разработки ПО\InternetShop\BusinessLogic\obj\Debug\net6.0\BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\filin\Desktop\егор\ДЗ\3 курс\Технология разработки ПО\InternetShop\BusinessLogic\obj\Debug\net6.0\BusinessLogic.csproj.CopyComplete
+C:\Users\filin\Desktop\егор\ДЗ\3 курс\Технология разработки ПО\InternetShop\BusinessLogic\obj\Debug\net6.0\BusinessLogic.dll
+C:\Users\filin\Desktop\егор\ДЗ\3 курс\Технология разработки ПО\InternetShop\BusinessLogic\obj\Debug\net6.0\refint\BusinessLogic.dll
+C:\Users\filin\Desktop\егор\ДЗ\3 курс\Технология разработки ПО\InternetShop\BusinessLogic\obj\Debug\net6.0\BusinessLogic.pdb
+C:\Users\filin\Desktop\егор\ДЗ\3 курс\Технология разработки ПО\InternetShop\BusinessLogic\obj\Debug\net6.0\BusinessLogic.genruntimeconfig.cache
+C:\Users\filin\Desktop\егор\ДЗ\3 курс\Технология разработки ПО\InternetShop\BusinessLogic\obj\Debug\net6.0\ref\BusinessLogic.dll

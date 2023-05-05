@@ -4,117 +4,117 @@ using Domain.Interfaces;
 
 namespace DataAccess.Wrapper
 {
-    public class RepositoryWrapper : IRepositoryWrapper
-    {
-        private InternetShopContext _repoContext;
+	public class RepositoryWrapper : IRepositoryWrapper
+	{
+		private InternetShopContext _repoContext;
 
-        private IUserRepository _user;
+		private IUserRepository _user;
 
-        private ICartRepository _cart;
+		private ICartRepository _cart;
 
-        private ICategoryRepository _category;
+		private ICategoryRepository _category;
 
-        private IFilterRepository _filter;
+		private IFilterRepository _filter;
 
-        private IGoodRepository _good;
+		private IGoodRepository _good;
 
-        private IGoodCharachteristicRepository _goodCharachteristic;
+		private IGoodCharachteristicRepository _goodCharachteristic;
 
-        private IOrderRepository _order;
+		private IOrderRepository _order;
 
-        public IUserRepository User
-        {
-            get
-            {
-                if (_user == null)
-                {
-                    _user = new UserRepository(_repoContext);
-                }
+		public IUserRepository User
+		{
+			get
+			{
+				if (_user == null)
+				{
+					_user = new UserRepository(_repoContext);
+				}
 
-                return _user;
-            }
-        }
+				return _user;
+			}
+		}
 
-        public ICartRepository Cart
-        {
-            get
-            {
-                if (_cart == null)
-                {
-                    _cart = new CartRepository(_repoContext);
-                }
+		public ICartRepository Cart
+		{
+			get
+			{
+				if (_cart == null)
+				{
+					_cart = new CartRepository(_repoContext);
+				}
 
-                return _cart;
-            }
-        }
+				return _cart;
+			}
+		}
 
-        public ICategoryRepository Category
-        {
-            get
-            {
-                if (_category == null)
-                {
-                    _category = new CategoryRepository(_repoContext);
-                }
+		public ICategoryRepository Category
+		{
+			get
+			{
+				if (_category == null)
+				{
+					_category = new CategoryRepository(_repoContext);
+				}
 
-                return _category;
-            }
-        }
+				return _category;
+			}
+		}
 
-        public IFilterRepository Filter
-        {
-            get
-            {
-                if (_filter == null)
-                {
-                    _filter = new FilterRepository(_repoContext);
-                }
+		public IFilterRepository Filter
+		{
+			get
+			{
+				if (_filter == null)
+				{
+					_filter = new FilterRepository(_repoContext);
+				}
 
-                return _filter;
-            }
-        }
+				return _filter;
+			}
+		}
 
-        public IGoodRepository Good
-        {
-            get
-            {
-                if (_good == null)
-                {
-                    _good = new GoodRepository(_repoContext);
-                }
+		public IGoodRepository Good
+		{
+			get
+			{
+				if (_good == null)
+				{
+					_good = new GoodRepository(_repoContext);
+				}
 
-                return _good;
-            }
-        }
+				return _good;
+			}
+		}
 
-        public IGoodCharachteristicRepository GoodCharachteristic
-        {
-            get
-            {
-                if (_goodCharachteristic == null)
-                {
-                    _goodCharachteristic = new GoodCharachteristicRepository(_repoContext);
-                }
+		public IGoodCharachteristicRepository GoodCharachteristic
+		{
+			get
+			{
+				if (_goodCharachteristic == null)
+				{
+					_goodCharachteristic = new GoodCharachteristicRepository(_repoContext);
+				}
 
-                return _goodCharachteristic;
-            }
-        }
+				return _goodCharachteristic;
+			}
+		}
 
-        public IOrderRepository Order
-        {
-            get
-            {
-                if (_order == null)
-                {
-                    _order = new OrderRepository(_repoContext);
-                }
+		public IOrderRepository Order
+		{
+			get
+			{
+				if (_order == null)
+				{
+					_order = new OrderRepository(_repoContext);
+				}
 
-                return _order;
-            }
-        }
+				return _order;
+			}
+		}
 #pragma warning disable CS8618
-        public RepositoryWrapper(InternetShopContext repositoryContext) => _repoContext = repositoryContext;
+		public RepositoryWrapper(InternetShopContext repositoryContext) => _repoContext = repositoryContext;
 
-        public async Task Save() => await _repoContext.SaveChangesAsync();
-    }
+		public async Task Save() => await _repoContext.SaveChangesAsync();
+	}
 }

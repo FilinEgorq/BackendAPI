@@ -2,16 +2,16 @@
 
 namespace Domain.Interfaces
 {
-    public interface IUserService
-    {
-        Task<List<User>> GetAll();
+	public interface IUserService
+	{
+		Task<List<User>> GetAll();
 
-        Task<User> GetById(int id);
+		Task<User> GetById(int id);
 
-        Task Create(User model);
+		Task Create(User model);
 
-        Task Update(User model);
+		Task Update(User model);
 
-        Task Delete(int id);
-    }
+		Task Delete(int id);
+	}
 }

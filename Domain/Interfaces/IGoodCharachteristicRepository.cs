@@ -2,5 +2,5 @@
 
 namespace Domain.Interfaces
 {
-    public interface IGoodCharachteristicRepository : IRepositoryBase<GoodCharachteristic> { }
+	public interface IGoodCharachteristicRepository : IRepositoryBase<GoodCharachteristic> { }
 }

@@ -2,16 +2,16 @@
 
 namespace Domain.Interfaces
 {
-    public interface ICartService
-    {
-        Task<List<Cart>> GetAll();
+	public interface ICartService
+	{
+		Task<List<Cart>> GetAll();
 
-        Task<Cart> GetById(int userId, int goodId);
+		Task<Cart> GetById(int userId, int goodId);
 
-        Task Create(Cart model);
+		Task Create(Cart model);
 
-        Task Update(Cart model);
+		Task Update(Cart model);
 
-        Task Delete(int userId, int goodId);
-    }
+		Task Delete(int userId, int goodId);
+	}
 }

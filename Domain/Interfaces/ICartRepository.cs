@@ -2,5 +2,5 @@
 
 namespace Domain.Interfaces
 {
-    public interface ICartRepository : IRepositoryBase<Cart> { }
+	public interface ICartRepository : IRepositoryBase<Cart> { }
 }

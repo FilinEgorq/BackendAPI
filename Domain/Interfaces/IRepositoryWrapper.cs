@@ -1,21 +1,21 @@
 ﻿namespace Domain.Interfaces
 {
-    public interface IRepositoryWrapper
-    {
-        IUserRepository User { get; }
+	public interface IRepositoryWrapper
+	{
+		IUserRepository User { get; }
 
-        ICartRepository Cart { get; }
+		ICartRepository Cart { get; }
 
-        ICategoryRepository Category { get; }
+		ICategoryRepository Category { get; }
 
-        IFilterRepository Filter { get; }
+		IFilterRepository Filter { get; }
 
-        IGoodRepository Good { get; }
+		IGoodRepository Good { get; }
 
-        IGoodCharachteristicRepository GoodCharachteristic { get; }
+		IGoodCharachteristicRepository GoodCharachteristic { get; }
 
-        IOrderRepository Order { get; }
+		IOrderRepository Order { get; }
 
-        Task Save();
-    }
+		Task Save();
+	}
 }

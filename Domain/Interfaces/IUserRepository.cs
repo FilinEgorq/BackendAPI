@@ -2,5 +2,5 @@
 
 namespace Domain.Interfaces
 {
-    public interface IUserRepository : IRepositoryBase<User> { }
+	public interface IUserRepository : IRepositoryBase<User> { }
 }

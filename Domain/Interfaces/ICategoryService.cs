@@ -2,16 +2,16 @@
 
 namespace Domain.Interfaces
 {
-    public interface ICategoryService
-    {
-        Task<List<Category>> GetAll();
+	public interface ICategoryService
+	{
+		Task<List<Category>> GetAll();
 
-        Task<Category> GetById(int id);
+		Task<Category> GetById(int id);
 
-        Task Create(Category model);
+		Task Create(Category model);
 
-        Task Update(Category model);
+		Task Update(Category model);
 
-        Task Delete(int id);
-    }
+		Task Delete(int id);
+	}
 }

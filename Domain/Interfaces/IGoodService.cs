@@ -2,16 +2,16 @@
 
 namespace Domain.Interfaces
 {
-    public interface IGoodService
-    {
-        Task<List<Good>> GetAll();
+	public interface IGoodService
+	{
+		Task<List<Good>> GetAll();
 
-        Task<Good> GetById(int id);
+		Task<Good> GetById(int id);
 
-        Task Create(Good model);
+		Task Create(Good model);
 
-        Task Update(Good model);
+		Task Update(Good model);
 
-        Task Delete(int id);
-    }
+		Task Delete(int id);
+	}
 }

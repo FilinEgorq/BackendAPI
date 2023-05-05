@@ -4,8 +4,8 @@ using Domain.Models;
 
 namespace DataAccess.Repositories
 {
-    public class FilterRepository : RepositoryBase<Filter>, IFilterRepository
-    {
-        public FilterRepository(InternetShopContext repositoryContext) : base(repositoryContext) { }
-    }
+	public class FilterRepository : RepositoryBase<Filter>, IFilterRepository
+	{
+		public FilterRepository(InternetShopContext repositoryContext) : base(repositoryContext) { }
+	}
 }
