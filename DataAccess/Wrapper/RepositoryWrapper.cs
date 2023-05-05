@@ -24,8 +24,7 @@ namespace DataAccess.Wrapper
 
 		public IUserRepository User
 		{
-			get
-			{
+			get {
 				if (_user == null)
 				{
 					_user = new UserRepository(_repoContext);
@@ -37,8 +36,7 @@ namespace DataAccess.Wrapper
 
 		public ICartRepository Cart
 		{
-			get
-			{
+			get {
 				if (_cart == null)
 				{
 					_cart = new CartRepository(_repoContext);
@@ -50,8 +48,7 @@ namespace DataAccess.Wrapper
 
 		public ICategoryRepository Category
 		{
-			get
-			{
+			get {
 				if (_category == null)
 				{
 					_category = new CategoryRepository(_repoContext);
@@ -63,8 +60,7 @@ namespace DataAccess.Wrapper
 
 		public IFilterRepository Filter
 		{
-			get
-			{
+			get {
 				if (_filter == null)
 				{
 					_filter = new FilterRepository(_repoContext);
@@ -76,8 +72,7 @@ namespace DataAccess.Wrapper
 
 		public IGoodRepository Good
 		{
-			get
-			{
+			get {
 				if (_good == null)
 				{
 					_good = new GoodRepository(_repoContext);
@@ -89,8 +84,7 @@ namespace DataAccess.Wrapper
 
 		public IGoodCharachteristicRepository GoodCharachteristic
 		{
-			get
-			{
+			get {
 				if (_goodCharachteristic == null)
 				{
 					_goodCharachteristic = new GoodCharachteristicRepository(_repoContext);
@@ -102,8 +96,7 @@ namespace DataAccess.Wrapper
 
 		public IOrderRepository Order
 		{
-			get
-			{
+			get {
 				if (_order == null)
 				{
 					_order = new OrderRepository(_repoContext);
