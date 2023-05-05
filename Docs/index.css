@@ -1,0 +1,97 @@
+h1 {
+	color: #b3bdb0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+	font-family: Arial;
+}
+
+h5 {
+	font-family: Arial;
+}
+
+p {
+	font-family: Arial;
+}
+
+.header {
+	padding: 80px;
+	text-align: center;
+	background: #1b3912;
+	color: white;
+}
+
+.navbar {
+	overflow: hidden;
+	background-color: #726376;
+}
+
+.row {
+	display: flex;
+}
+
+.side {
+	background-color: #e4c6ed;
+	padding: 20px;
+}
+
+.main {
+	flex: 70%;
+	background-color: white;
+	padding: 20px;
+}
+
+.footer {
+	padding: 200px;
+	text-align: center;
+	background: #b3bdb0;
+	background-image: url(cat.jpg);
+}
+
+a {
+	font-family: Arial;
+}
+
+.imagediv {
+	background-color: #1b1239;
+	width: 100%;
+	font-family: Arial;
+	padding: 20px;
+}
+
+.navbar a {
+	display: block;
+	float: left;
+	text-align: center;
+	padding: 14px 20px;
+	text-decoration: none;
+	color: #f1e2f5;
+}
+
+.navbar a.right {
+	float: right;
+}
+
+.navbar a:hover {
+	background-color: #e4c6ed;
+	color: #0d091c;
+}
+
+body {
+	margin: 0;
+	background-color: #b3bdb0;
+}
+
+@media screen and (max-width: 700px) {
+	.row {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.navbar a {
+		float: none;
+		width: 100%;
+	}
+}
