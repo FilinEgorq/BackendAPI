@@ -3,14 +3,18 @@ using DataAccess.Context;
 using DataAccess.Wrapper;
 using Domain.Interfaces;
 using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Authorization;
+using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.EntityFrameworkCore;
+using WebServer.Auth;
 using WebServer.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Services.AddAuthenticationCore();
 builder.Services.AddDbContext<InternetShopContext>(options =>
 								options.UseSqlServer("Server= DESKTOP-TKK652L;Database= InternetShop;Integrated Security= True;"));
 
@@ -26,6 +30,10 @@ builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
+
+builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
+builder.Services.AddScoped<ProtectedSessionStorage>();
+builder.Services.AddScoped<ProtectedLocalStorage>();
 
 var app = builder.Build();
 
