@@ -28,7 +28,7 @@ namespace WebServer.Auth
 				var claimsPrincipal = new ClaimsPrincipal(new ClaimsIdentity(new List<Claim>
 				{
 					new Claim(ClaimTypes.Sid, userSession.Id),
-					new Claim(ClaimTypes.Name, userSession.FirstName),
+					new Claim(ClaimTypes.Name, userSession.UserName),
 					new Claim(ClaimTypes.Email, userSession.Email),
 					new Claim(ClaimTypes.Role, userSession.Role)
 				}, "CustomAuth"));
@@ -51,7 +51,7 @@ namespace WebServer.Auth
 				claimsPrincipal = new ClaimsPrincipal(new ClaimsIdentity(new List<Claim>
 				{
 										new Claim(ClaimTypes.Sid, userSession.Id),
-					new Claim(ClaimTypes.Name, userSession.FirstName),
+					new Claim(ClaimTypes.Name, userSession.UserName),
 					new Claim(ClaimTypes.Email, userSession.Email),
 					new Claim(ClaimTypes.Role, userSession.Role)
 				}));
