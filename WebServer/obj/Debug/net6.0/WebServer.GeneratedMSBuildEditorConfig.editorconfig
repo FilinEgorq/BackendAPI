@@ -5,65 +5,68 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
-build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebServer
 build_property.RootNamespace = WebServer
-build_property.ProjectDir = C:\Users\Egor\source\repos\BackendAPI\WebServer\
+build_property.ProjectDir = C:\Users\filin\Desktop\егор\ДЗ\3 курс\Учебная практика\BackendAPI\BackendAPI\WebServer\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Egor\source\repos\BackendAPI\WebServer
+build_property.MSBuildProjectDirectory = C:\Users\filin\Desktop\егор\ДЗ\3 курс\Учебная практика\BackendAPI\BackendAPI\WebServer
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Egor/source/repos/BackendAPI/WebServer/App.razor]
+[C:/Users/filin/Desktop/егор/ДЗ/3 курс/Учебная практика/BackendAPI/BackendAPI/WebServer/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Egor/source/repos/BackendAPI/WebServer/Pages/Counter.razor]
+[C:/Users/filin/Desktop/егор/ДЗ/3 курс/Учебная практика/BackendAPI/BackendAPI/WebServer/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Egor/source/repos/BackendAPI/WebServer/Pages/FetchData.razor]
+[C:/Users/filin/Desktop/егор/ДЗ/3 курс/Учебная практика/BackendAPI/BackendAPI/WebServer/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Egor/source/repos/BackendAPI/WebServer/Pages/GoodList.razor]
+[C:/Users/filin/Desktop/егор/ДЗ/3 курс/Учебная практика/BackendAPI/BackendAPI/WebServer/Pages/GoodList.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR29vZExpc3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Egor/source/repos/BackendAPI/WebServer/Pages/Index.razor]
+[C:/Users/filin/Desktop/егор/ДЗ/3 курс/Учебная практика/BackendAPI/BackendAPI/WebServer/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Egor/source/repos/BackendAPI/WebServer/Pages/Login.razor]
+[C:/Users/filin/Desktop/егор/ДЗ/3 курс/Учебная практика/BackendAPI/BackendAPI/WebServer/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Egor/source/repos/BackendAPI/WebServer/Shared/SurveyPrompt.razor]
+[C:/Users/filin/Desktop/егор/ДЗ/3 курс/Учебная практика/BackendAPI/BackendAPI/WebServer/Pages/Registration.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0cmF0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/filin/Desktop/егор/ДЗ/3 курс/Учебная практика/BackendAPI/BackendAPI/WebServer/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Egor/source/repos/BackendAPI/WebServer/_Imports.razor]
+[C:/Users/filin/Desktop/егор/ДЗ/3 курс/Учебная практика/BackendAPI/BackendAPI/WebServer/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Egor/source/repos/BackendAPI/WebServer/Shared/MainLayout.razor]
+[C:/Users/filin/Desktop/егор/ДЗ/3 курс/Учебная практика/BackendAPI/BackendAPI/WebServer/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-0vvyqxa0p2
 
-[C:/Users/Egor/source/repos/BackendAPI/WebServer/Shared/NavMenu.razor]
+[C:/Users/filin/Desktop/егор/ДЗ/3 курс/Учебная практика/BackendAPI/BackendAPI/WebServer/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-10ciz5o9y0
 
-[C:/Users/Egor/source/repos/BackendAPI/WebServer/Pages/Error.cshtml]
+[C:/Users/filin/Desktop/егор/ДЗ/3 курс/Учебная практика/BackendAPI/BackendAPI/WebServer/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Egor/source/repos/BackendAPI/WebServer/Pages/_Host.cshtml]
+[C:/Users/filin/Desktop/егор/ДЗ/3 курс/Учебная практика/BackendAPI/BackendAPI/WebServer/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Egor/source/repos/BackendAPI/WebServer/Pages/_Layout.cshtml]
+[C:/Users/filin/Desktop/егор/ДЗ/3 курс/Учебная практика/BackendAPI/BackendAPI/WebServer/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -64,5 +64,20 @@ namespace WebServer.Auth
 
 			NotifyAuthenticationStateChanged(Task.FromResult(new AuthenticationState(claimsPrincipal)));
 		}
+
+		/*
+		public async void SaveDataToLocalStorage(string key, string data) => await _localStorage.SetAsync(key, data);
+
+		public async Task<string> GetDataFromStorage(string key)
+		{
+			try
+			{
+				var result = await _localStorage.GetAsync<string>(key);
+
+				return result.Success ? result.Value : "";
+			}
+			catch { return ""; }
+		}
+		*/
 	}
 }

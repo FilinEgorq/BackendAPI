@@ -16,7 +16,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddAuthenticationCore();
 builder.Services.AddDbContext<InternetShopContext>(options =>
-								options.UseSqlServer("Server= DESKTOP-M8EBTD9;Database= InternetShop;Integrated Security= True;"));
+								options.UseSqlServer("Server= DESKTOP-TKK652L;Database= InternetShop;Integrated Security= True;"));
 
 builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
 builder.Services.AddScoped<IUserService, UserService>();

@@ -37,6 +37,16 @@
 		public string Password { get; set; }
 	}
 
+	/*
+	protected override void OnAfterRender(bool firstRender)
+	{
+		var customAuthenticationStateProivder = (CustomAuthenticationStateProvider)authenticationStateProvider;
+
+		model.Email = customAuthenticationStateProivder.GetDataFromStorage("email").Result;
+		model.Password = customAuthenticationStateProivder.GetDataFromStorage("password").Result;
+	}
+	*/
+
 	private Model model = new Model();
 
 	private async Task Authenticate()
@@ -58,6 +68,9 @@
 				UserName = userAccount.Name,
 				Role = "User"
 			});
+
+		//customAuthenticationStateProivder.SaveDataToLocalStorage("email", model.Email);
+		//customAuthenticationStateProivder.SaveDataToLocalStorage("password", model.Password);
 
 		navigationManager.NavigateTo("/", true);
 	}
